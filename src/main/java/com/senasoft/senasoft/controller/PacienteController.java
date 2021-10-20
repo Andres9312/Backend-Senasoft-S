@@ -1,8 +1,8 @@
 
 package com.senasoft.senasoft.controller;
 
-import com.senasoft.senasoft.modelo.Doctor;
-import com.senasoft.senasoft.service.DoctorService;
+import com.senasoft.senasoft.modelo.Paciente;
+import com.senasoft.senasoft.service.PacienteService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,38 +16,36 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/doctor")
+@RequestMapping("/api/paciente")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
-public class DoctorController {
+public class PacienteController {
     
     @Autowired
-    DoctorService doctorService;
+    PacienteService pacienteService;
     
     @GetMapping("/listar")
-    public List<Doctor> listar(){
-        return doctorService.listar();
+    public List<Paciente> listar(){
+        return pacienteService.listar();
      }
     
     @GetMapping("/id/{id}")
-    public Doctor buscarPorId(@PathVariable Long id){
-        return doctorService.buscarPorId(id);
+    public Paciente buscarPorId(@PathVariable Long id){
+       return pacienteService.buscarPorId(id);
     }
     
     @PostMapping("/registrar")
-    public void registrar(Doctor doctor){
-        doctorService.registrar(doctor);
+    public void registrar(Paciente paciente){
+        pacienteService.registrar(paciente);
     }
     
-    @PutMapping("modificar")
-    public void modificar(Doctor doctor){
-        doctorService.modificar(doctor);
+    @PutMapping("/modificar")
+    public void modificar(Paciente paciente){
+        pacienteService.modificar(paciente);
     }
     
-    @DeleteMapping("/elimianr")
-    public void elimianr(Doctor doctor){
-       doctorService.eliminar(doctor);
+    @DeleteMapping("/eliminar")
+    public void eliminar(Paciente paciente){
+        pacienteService.eliminar(paciente);
     }
-    
-    
     
 }

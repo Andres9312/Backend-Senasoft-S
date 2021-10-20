@@ -3,10 +3,13 @@ package com.senasoft.senasoft;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+
 @SpringBootApplication
 public class SenasoftApplication {
 
 	public static void main(String[] args) {
+            
 		SpringApplication.run(SenasoftApplication.class, args);
 	}
 

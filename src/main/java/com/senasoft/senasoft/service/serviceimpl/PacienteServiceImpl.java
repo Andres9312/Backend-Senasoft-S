@@ -19,5 +19,25 @@ public class PacienteServiceImpl implements PacienteService{
     public List<Paciente> listar() {
       return pacienteDao.findAll();
     }
+
+    @Override
+    public Paciente buscarPorId(Long id) {
+      return pacienteDao.findById(id).orElse(null);
+    }
+
+    @Override
+    public void registrar(Paciente paciente) {
+      pacienteDao.save(paciente);
+    }
+
+    @Override
+    public void modificar(Paciente paciente) {
+        pacienteDao.save(paciente);
+    }
+
+    @Override
+    public void eliminar(Paciente paciente) {
+        pacienteDao.delete(paciente);
+    }
     
 }

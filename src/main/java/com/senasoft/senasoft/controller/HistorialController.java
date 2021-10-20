@@ -1,8 +1,8 @@
 
 package com.senasoft.senasoft.controller;
 
-import com.senasoft.senasoft.modelo.Doctor;
-import com.senasoft.senasoft.service.DoctorService;
+import com.senasoft.senasoft.modelo.Historial;
+import com.senasoft.senasoft.service.HistorialService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,38 +16,40 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/doctor")
+@RequestMapping("/api/historial")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
-public class DoctorController {
+public class HistorialController {
     
     @Autowired
-    DoctorService doctorService;
+    HistorialService historialService;
     
     @GetMapping("/listar")
-    public List<Doctor> listar(){
-        return doctorService.listar();
+    public List<Historial> listar(){
+       return historialService.listar();
      }
     
     @GetMapping("/id/{id}")
-    public Doctor buscarPorId(@PathVariable Long id){
-        return doctorService.buscarPorId(id);
+    public Historial buscarPorId(@PathVariable Long id){
+        return historialService.buscarPorId(id);
     }
     
     @PostMapping("/registrar")
-    public void registrar(Doctor doctor){
-        doctorService.registrar(doctor);
+    public void registrar(Historial historial){
+        historialService.registrar(historial);
     }
     
-    @PutMapping("modificar")
-    public void modificar(Doctor doctor){
-        doctorService.modificar(doctor);
+    @PutMapping("/modificar")
+    public void modificar(Historial historial){
+        historialService.modificar(historial);
     }
     
-    @DeleteMapping("/elimianr")
-    public void elimianr(Doctor doctor){
-       doctorService.eliminar(doctor);
+    @DeleteMapping("/eliminar")
+    public void eliminar(Historial historial){
+        historialService.eliminar(historial);
     }
+        
     
+
     
     
 }

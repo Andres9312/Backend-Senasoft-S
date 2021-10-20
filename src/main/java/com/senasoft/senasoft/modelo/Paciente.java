@@ -31,7 +31,7 @@ public class Paciente {
     @Column (name = "cedula")
     private String cedula;
     
-    @Column (name = "url:imagen")
+    @Column (name = "url_imagen")
     private String urlImagen;
     
 }

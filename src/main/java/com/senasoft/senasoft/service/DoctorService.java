@@ -8,4 +8,8 @@ import java.util.List;
 
 public interface DoctorService {
     public List<Doctor> listar();
+    public Doctor buscarPorId(Long id);
+    public void registrar(Doctor doctor);
+    public void modificar(Doctor doctor);
+    public void eliminar(Doctor doctor);
 }

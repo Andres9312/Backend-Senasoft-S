@@ -18,6 +18,26 @@ public class DoctorServiceImpl implements DoctorService {
     public List<Doctor> listar() {
       return doctorDao.findAll();
     }
+
+    @Override
+    public Doctor buscarPorId(Long id) {
+       return doctorDao.findById(id).orElse(null);
+    }
+
+    @Override
+    public void registrar(Doctor doctor) {
+        doctorDao.save(doctor);
+    }
+
+    @Override
+    public void modificar(Doctor doctor) {
+       doctorDao.save(doctor);
+    }
+
+    @Override
+    public void eliminar(Doctor doctor) {
+       doctorDao.delete(doctor);
+    }
     
     
 }
