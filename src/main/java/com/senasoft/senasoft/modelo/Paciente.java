@@ -20,7 +20,7 @@ public class Paciente {
     private Long id;
     
     @Column (name = "nombres")
-    private String nombre;
+    private String nombres;
     
     @Column (name = "apellidos")
     private String apellidos;

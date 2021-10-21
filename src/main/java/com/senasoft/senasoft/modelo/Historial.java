@@ -24,6 +24,9 @@ public class Historial {
     @Column (name = "fecha")
     private LocalDate fecha;
     
+     @Column (name = "url_historial")
+    private String urlHistorial;
+    
     @ManyToOne
     @JoinColumn (name = "doctores_id")
     private Doctor doctor;
