@@ -2,13 +2,14 @@ package com.senasoft.senasoft.dto.request;
 
 import com.senasoft.senasoft.modelo.Doctor;
 import com.senasoft.senasoft.modelo.Paciente;
+import java.io.Serializable;
 import java.time.LocalDate;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
 @Data
-public class HistorialReqDto {
+public class HistorialReqDto implements Serializable {
     
     private MultipartFile historial;
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
