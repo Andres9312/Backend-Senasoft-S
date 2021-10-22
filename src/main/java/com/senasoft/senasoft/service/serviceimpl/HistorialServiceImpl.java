@@ -38,5 +38,10 @@ public class HistorialServiceImpl implements HistorialService {
     public void eliminar(Historial historial) {
        historialDao.delete(historial);
     }
+
+    @Override
+    public List<Historial> listarPorIdPaciente(Long id) {
+        return historialDao.listarPorIdPaciente(id);
+    }
     
 }
