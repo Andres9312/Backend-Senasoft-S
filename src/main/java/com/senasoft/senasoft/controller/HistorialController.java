@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -66,17 +67,16 @@ public class HistorialController {
         String url = almacenamientoService.almacenarComoPdf(historialDto.getHistorial());
         
         historial.setUrlHistorial(url);
-        
         historialService.registrar(historial);
     }
     
     @PutMapping("/modificar")
-    public void modificar(Historial historial){
+    public void modificar(@RequestBody Historial historial){
         historialService.modificar(historial);
     }
     
     @DeleteMapping("/eliminar")
-    public void eliminar(Historial historial){
+    public void eliminar(@RequestBody Historial historial){
         historialService.eliminar(historial);
     }
     
