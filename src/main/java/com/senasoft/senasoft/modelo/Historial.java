@@ -10,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Data
@@ -21,10 +22,11 @@ public class Historial {
     @Column (name = "id")
     private Long id;
 
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     @Column (name = "fecha")
     private LocalDate fecha;
     
-     @Column (name = "url_historial")
+    @Column (name = "url_historial")
     private String urlHistorial;
     
     @ManyToOne
