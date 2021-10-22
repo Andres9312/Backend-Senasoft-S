@@ -12,4 +12,5 @@ public interface DoctorService {
     public void registrar(Doctor doctor);
     public void modificar(Doctor doctor);
     public void eliminar(Doctor doctor);
+    public Doctor buscarPorCedula(String cedula);
 }

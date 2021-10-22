@@ -24,6 +24,7 @@ public class DoctorController {
     @Autowired
     DoctorService doctorService;
     
+    
     @GetMapping("/listar")
     public List<Doctor> listar(){
         return doctorService.listar();
