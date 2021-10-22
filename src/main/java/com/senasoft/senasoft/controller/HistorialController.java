@@ -75,7 +75,7 @@ public class HistorialController {
     @PostMapping("/registrar")
     public ResponseEntity registrar(@ModelAttribute HistorialReqDto historialDto) throws IOException, FileNotFoundException, DocumentException {
 
-        //Historial que ser√° almacenado
+        //Historial que ser· almacenado
         Historial historial = new Historial();
         
         Long doctorId = historialDto.getIdDoctor();
@@ -89,7 +89,7 @@ public class HistorialController {
         byte[] firma = imagenClient.descargarFirma(doctor.getUrlFirma());
         MultipartFile mpFirma = new BASE64DecodedMultipartFile(firma);
 
-        //Validaci√≥n de formulario
+        //ValidaciÛn de formulario
         ValidacionFormularioResDto validacion = validacionClient.validarFormulario(historialDto.getHistorial(), mpFirma);
         
         String valFirma = validacion.getFirma();
@@ -106,19 +106,18 @@ public class HistorialController {
         
         String url = almacenamientoService.almacenarComoPdf(historialDto.getHistorial());
         historial.setUrlHistorial(url);
-        
         historialService.registrar(historial);
         
         return ResponseEntity.ok(historial);
     }
     
     @PutMapping("/modificar")
-    public void modificar(@RequestBody Historial historial) {
+    public void modificar(@RequestBody Historial historial){
         historialService.modificar(historial);
     }
     
     @DeleteMapping("/eliminar")
-    public void eliminar(@RequestBody Historial historial) {
+    public void eliminar(@RequestBody Historial historial){
         historialService.eliminar(historial);
     }
     

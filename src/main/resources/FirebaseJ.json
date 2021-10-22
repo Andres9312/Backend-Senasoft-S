@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "senasoft-f07bb",
+  "private_key_id": "28714864796a82e59645519f052b73149ca3c546",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCTJNa+3zznR/Z\niXNqG7xl8eANJL8yqCT7MbhEyO6kRgjmEiMQddMJ4ATjdJTp1vgha9Xu9RlOvccS\nQrj/X5A0I6hWZ3UwdvLZCNtbthX0Vhtn1PP5wZy1gCr72PtNnM6rAYQAlN5g38J/\ntbhhhgrnwdRcRck38cwRKCKE8rQnNBQW0wZ29bjV4Z3WAAkDO6LZ8s5l7yIvMVWS\nUmR2LWu6b76fIM2nhaVK1277QmmvjjClf9eKb/LsshvVoOS6KwASbhYXPM3Jwf2c\nn3l86donj7O+pJfYFTmkwWHSzlkZQNpluaT9c/qcXPiY5jIJE1d1jusXeu3gSzX9\nMVHKodI9AgMBAAECggEACcGUFZmypr3hQ0hQVAfkAB9yz14kvpusTbOrq8KGHxgI\nKttGyPUNnX2S6UPplUtOxsjWI2tJs8c6N3vDs8j94exXb80+mGoknArCjvqX5B6t\nvhs2i/gxkPiIUACPb9B7nSEUmn3fI7CgoM6EXVtAcW4tZlu3tJgu1b606wWPz7cK\nklXRym2FZhL4YUVCkifyj2Ys51drw9stav11FNZ800FxG3xreB+3Fu/W0l5wJhkM\nPSJ1HLjEGK4tanH/A6NeH9ETZgB7e+8uAdT0a9U0+X0J6tW3vhwAVJA9dlPR7iDN\n06Sh3GGiSy3sKtyIKIlm+4ks4TpEhV/qoP02kVXFWQKBgQDlIKgX5LRvQougE5Vw\npqgBjz5koS6hD3CDDcmsTUEEslJMlIm5EcCpMnEbMG/CzwCoUT9ZPqswgbNkdVuf\nncflcW2wu0AVW77DxmY6M9vUAoaq83NRY6+sUzXsMyOXdSu/wZRWQNup+C+jA6tJ\nAy+sDPAQQ8pVThiOZaEA+buudQKBgQDZFjorcfc9vlPCHJuAO41A6s43lxnDtqOH\n9XEpZ5m24zhQf5cGijPm8Wk+cO5sQbizjIBD298lTE2wYm+rteIt41Mc6GUU+NKq\n7b1hOFGzPXsgVhA57ILErulL19nhIcxoxQ5CxlvHHcp4ZJzo0rw1B98jdHpppnzK\nuSnbV/YrqQKBgCE03GeqE6RURpwKeov6+zpOokI/QdzBuhKkOugnwhaGKXtDw7n4\noq1izBWerXPUQEokjEPI21KKWY9jmsXFPiU4jSch3CW8SCdjZ4lj3qYZP58i7UGM\navdUj+oNd0kKCC8gRPlDKRK3D2BWtco9FfmfXmNdD8PRL6njfLQBfXvJAoGBAJsS\nTKVCOMoLTkuoIdB9Oc74rCx7rHTo33I8ewSHs/832r9uFRUf3imHo5VuGHKOlAD2\nSZ2vz3wWQJzSBFFVkOcUrwdEXwiXIe3l+9UZ5QqzzWNw9xBZiaQ0CgUagNJYUWs5\n8JD0nxTijAJqZMfP2Y/MOrJZ/yO/QP+TO3orIHdZAoGAB59k8aWhY6EkT+mHVjaj\n5/80PNVJlFeIcl4Z+ZHfGaUQHpluVIbvC6Hd21Mt+o64pnlXM4ukIUwDc3A1jgwz\nCp+4L1IWEsPSMNnNX7+6aP3wDWq80VDqX83L+KP5D+RFKkyuWPnSF3GS8OuwbF4p\n9nbEHfJaubmUzQo/71Gf5uA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-xgsca@senasoft-f07bb.iam.gserviceaccount.com",
+  "client_id": "109826214418379285491",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xgsca%40senasoft-f07bb.iam.gserviceaccount.com"
+}

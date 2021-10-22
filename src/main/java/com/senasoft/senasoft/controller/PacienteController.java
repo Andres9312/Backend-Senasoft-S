@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,17 +35,17 @@ public class PacienteController {
     }
     
     @PostMapping("/registrar")
-    public void registrar(Paciente paciente){
+    public void registrar(@RequestBody Paciente paciente){
         pacienteService.registrar(paciente);
     }
     
     @PutMapping("/modificar")
-    public void modificar(Paciente paciente){
+    public void modificar(@RequestBody Paciente paciente){
         pacienteService.modificar(paciente);
     }
     
     @DeleteMapping("/eliminar")
-    public void eliminar(Paciente paciente){
+    public void eliminar(@RequestBody Paciente paciente){
         pacienteService.eliminar(paciente);
     }
     
