@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,6 +24,7 @@ public class DoctorController {
     @Autowired
     DoctorService doctorService;
     
+    
     @GetMapping("/listar")
     public List<Doctor> listar(){
         return doctorService.listar();
@@ -34,17 +36,17 @@ public class DoctorController {
     }
     
     @PostMapping("/registrar")
-    public void registrar(Doctor doctor){
+    public void registrar(@RequestBody Doctor doctor){
         doctorService.registrar(doctor);
     }
     
     @PutMapping("modificar")
-    public void modificar(Doctor doctor){
+    public void modificar(@RequestBody Doctor doctor){
         doctorService.modificar(doctor);
     }
     
     @DeleteMapping("/elimianr")
-    public void elimianr(Doctor doctor){
+    public void elimianr(@RequestBody Doctor doctor){
        doctorService.eliminar(doctor);
     }
     

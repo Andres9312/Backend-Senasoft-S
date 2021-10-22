@@ -38,6 +38,11 @@ public class DoctorServiceImpl implements DoctorService {
     public void eliminar(Doctor doctor) {
        doctorDao.delete(doctor);
     }
+
+    @Override
+    public Doctor buscarPorCedula(String cedula) {
+        return doctorDao.findByCedula(cedula);
+    }
     
     
 }
